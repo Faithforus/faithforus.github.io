@@ -1,6 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>双系统时间同步</title>
+    <url>/2020/05/16/%E5%8F%8C%E7%B3%BB%E7%BB%9F%E6%97%B6%E9%97%B4%E5%90%8C%E6%AD%A5/</url>
+    <content><![CDATA[<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">timedatectl set-local-rtc 1</span><br></pre></td></tr></table></figure>
+
+
+
+]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>双系统</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>画图</title>
+    <url>/2020/05/16/%E7%94%BB%E5%9B%BE%E6%B5%8B%E8%AF%95/</url>
+    <content><![CDATA[<p>drow</p>
+<hr>
+<div id="echarts3495" style="width: 85%;height: 400px;margin: 0 auto"></div>
+<script src="https://cdn.bootcss.com/echarts/3.8.0/echarts.common.min.js"></script>
+<script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('echarts3495'));
+        // 指定图表的配置项和数据
+        var option = {
+    tooltip : {
+        trigger: 'axis',
+        axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+            type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+        }
+    },
+    legend: {
+        data:['利润', '支出', '收入']
+    },
+    grid: {
+        left: '3%',
+        right: '4%',
+        bottom: '3%',
+        containLabel: true
+    },
+    xAxis : [
+        {
+            type : 'value'
+        }
+    ],
+    yAxis : [
+        {
+            type : 'category',
+            axisTick : {show: false},
+            data : ['周一','周二','周三','周四','周五','周六','周日']
+        }
+    ],
+    series : [
+        {
+            name:'利润',
+            type:'bar',
+            itemStyle : {
+                normal: {
+                    label: {show: true, position: 'inside'}
+                }
+            },
+            data:[200, 170, 240, 244, 200, 220, 210]
+        },
+        {
+            name:'收入',
+            type:'bar',
+            stack: '总量',
+            itemStyle: {
+                normal: {
+                    label : {show: true}
+                }
+            },
+            data:[320, 302, 341, 374, 390, 450, 420]
+        },
+        {
+            name:'支出',
+            type:'bar',
+            stack: '总量',
+            itemStyle: {normal: {
+                label : {show: true, position: 'left'}
+            }},
+            data:[-120, -132, -101, -134, -190, -230, -210]
+        }
+    ]
+};
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+</script>
+
+]]></content>
+      <categories>
+        <category>测试</category>
+      </categories>
+      <tags>
+        <tag>Echarts</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>小窝</title>
     <url>/2020/05/15/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[<p>忙碌了一晚上，初步搭起来了这个小窝~</p>
@@ -13,15 +112,9 @@
       </tags>
   </entry>
   <entry>
-    <title>双系统时间同步</title>
-    <url>/2020/05/16/%E5%8F%8C%E7%B3%BB%E7%BB%9F%E6%97%B6%E9%97%B4%E5%90%8C%E6%AD%A5/</url>
-    <content><![CDATA[<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">timedatectl set-local-rtc 1</span><br></pre></td></tr></table></figure>
-
-
-
+    <title>admin</title>
+    <url>/2020/05/16/admin/</url>
+    <content><![CDATA[<p>Hello,Admin</p>
 ]]></content>
-      <tags>
-        <tag>Linux</tag>
-      </tags>
   </entry>
 </search>
