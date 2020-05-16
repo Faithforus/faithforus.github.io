@@ -112,9 +112,10 @@
       </tags>
   </entry>
   <entry>
-    <title>admin</title>
-    <url>/2020/05/16/admin/</url>
-    <content><![CDATA[<p>Hello,Admin</p>
+    <title>照片</title>
+    <url>/2020/05/16/%E7%85%A7%E7%89%87/</url>
+    <content><![CDATA[<p><img src="https://faithforus.github.io/source/images/1.jpg" alt="1"></p>
+<p><img src="http://image.namedq.com/uploads/20181220/23/1545319800-sHbJDaZNLF.jpg" alt="1"></p>
 ]]></content>
   </entry>
 </search>
